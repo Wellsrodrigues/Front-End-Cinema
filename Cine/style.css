@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    background-color: rgb(249,92,0);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+#topo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border: 3px solid rgba(255, 255, 255, 0.04);
+    background-color: rgb(29, 29, 29);
+}
+
+#topo img{
+    height: 250px;
+}
+
+.container{
+    width: 45%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+#bot1{
+    width: 150px;
+    height: 40px;
+    background-color: #f95c00;
+    border-radius: 3px;
+    font-weight: bold;
+    border: none;
+}
+
+#bot1:hover{
+    background-color: #dd7e11;
+}
+
+.boxText{
+    width: 200px;
+    height: 40px;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 0px 20px;
+}
+
+.boxText:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+.boxText input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.boxText i{
+    color: #3a3a3a;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+#menu{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50px;
+    padding: 0 auto;
+    list-style: none;
+}
+
+#optionsMenu a{
+    display: inline-block;
+    padding: 16px 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .4s;
+}
+
+#optionsMenu i{
+    color: white;
+    font-size: 20px;
+}
+
+#optionsMenu a:hover{
+    background-color: rgb(249,92,0);
+}
+
+#icons i{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 12px 5px;
+}
+
+.banner{
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+    translate: (-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    margin: 6px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: white;
+}
+
+.slides input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide{
+    width: 25%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -75%;
+}
+
+.base img{
+    position: absolute;
+    top: 82%;
+    width: 100%;
+    height: 90%;
+}
+
+.stand{
+    width: 85%;
+    height: 870px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 155%;
+    left:7%;
+}
+
+.cardText1{
+    width: 250px;
+    margin-left: 30px;
+}
+
+.cardText2{
+    width: 700px;
+    margin-left: 30px;
+    position: absolute;
+    top: 45%;
+}
+
+.movies{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.painel1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 165%;
+    left: 2%;
+}
+
+.painel2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 228%;
+    left: 2%;
+}
+
+.painel1 img{
+    height: 270px;
+    padding-left: 10px;
+    transition: all 500ms ease-in-out;
+}
+
+.painel2 img{
+    height: 263px;
+    padding-left: 10px;
+    transition: all 500ms ease-in-out;
+}
+
+.movies:hover{
+    transform: scale(1.1,1.1);
+}
+
+.status{
+    height: 30px;
+    width: 184px;
+    background-color: rgb(29, 29, 29);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: -4px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.status p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.rodape{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 270%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about a{
+    color: white;
+}
+
+.about a:hover{
+    color: rgb(249,92,0);
+}
+
+.rodape img{
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.text1{
+    color: white;
+    margin-top: 30px;
+}
+
+.note{
+    position: absolute;
+    top: 330%;
+    width: 100%;
+    color: rgb(146, 145, 145);
+    text-align: center;
+}
+
+.text1 h2{
+    padding-left: 36px;
+}
